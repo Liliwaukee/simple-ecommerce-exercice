@@ -14,7 +14,7 @@ function createProductHTML(product) {
     <p>${product.description}</p>
     <button data-product-id=${product.id}
       onclick="addToCart(this,${product.id})"
-      class="btn btn-primary">
+      class="btn btn-warning">
         Agregar a carrito
       </button>
     <hr/>
@@ -59,13 +59,8 @@ function addToCart(product, productId) {
 
 
 
-function removeFromCart(product) {
-  /* cuando agrego a carrito, tengo que:
-  1) Decrementar en uno mi contador del menu
-  2) Borrar mi producto de algun lugar
-  3) Cambiar el boton de quitar del carrito
-  por agregar a carrito
-  */
+function removeFromCart(product, productId) {
+
 }
 
 function increaseCounter(product, counter) {
@@ -92,13 +87,13 @@ function changeButtonStatus(button) {
 
   if (button.innerText =="Agregar a carrito") {
       button.innerText = "Quitar del carrito";
-      button.classList.remove("btn-primary");
+      button.classList.remove("btn-warning");
       button.classList.add("btn-secondary");
 
   }
    else {
      button.innerText = "Agregar a carrito";
-     button.classList.add("btn-primary");
+     button.classList.add("btn-warning");
      button.classList.remove("btn-secondary");
 
   }
