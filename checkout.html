@@ -5,6 +5,12 @@
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+<!--PAY PAL -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -42,23 +48,16 @@
 
           </tr>
         </thead>
-        <tbody id="table-body">
-
-        <tr id="total-price">
-        </tr>
-
-        </tbody>
+        <tbody id="table-body"></tbody>
+        <tr id="total-price"></tr>
       </table>
     </div>
-    <div>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="S68CSMUPC6B9J">
-      <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
-      <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-      </form>
 
+    <div class="container">
+      <div id="paypal-button-container"></div>
     </div>
-      <script src="js/checkout.js"></script>
+
+
+    <script src="js/checkout.js"></script>
   </body>
 </html>
