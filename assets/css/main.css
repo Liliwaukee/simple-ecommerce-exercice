@@ -1,0 +1,25 @@
+.logo {
+  height: 10vh;
+}
+
+#nav {
+  background-color: black!important;
+}
+
+.nav-link {
+  color: white!important;
+}
+
+#btn-checkout{
+  background-color: #FF8900!important;
+}
+
+#avaible-items {
+  color: #FF8900;
+  font-weight: bold;
+  margin-top: 4vh;
+}
+
+img {
+  height: 25vh;
+}
